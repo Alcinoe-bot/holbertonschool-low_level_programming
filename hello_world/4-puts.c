@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-(* main - Point d'entrer
+ * main - Point d'entrer
  * Description: affiche Programming is like building a multilingual puzzle
  * Return: 0
  */
