@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* name : 5-printf.c
+* main - Point d'entrer
 * Description: affiche with proper grammar, but the outcome is a piece of art
 * Return : 0
 */
