@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * name : 5-printf.c
-* Description: affiche with proper grammar, but the outcome is a piece of art, avec un retour a la ligne
+* Description: affiche with proper grammar, but the outcome is a piece of art
 * Return : 0
 */
 int main(void)
