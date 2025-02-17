@@ -1,9 +1,9 @@
 #include <stdio.h>
-/**                                                                                                                                                                                                     
- * name : 5-printf.c                                                                                                                                                                                    
- * Description: affiche with proper grammar, but the outcome is a piece of art, avec un retour a la ligne                                                                                               
- * Return : 0                                                                                                                                                                                           
- */
+/**
+* name : 5-printf.c
+* Description: affiche with proper grammar, but the outcome is a piece of art, avec un retour a la ligne
+* Return : 0
+*/
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
