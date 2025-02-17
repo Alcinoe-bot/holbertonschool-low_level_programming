@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
 * main - positif ou negatif
 * Descriptione: generer un nombre puis dire s'il est + ou -
@@ -7,6 +9,8 @@
 int main(void)
 {
 int n;
+srand(time(NULL));
+n = rand();
 if (n < 0)
 {
 printf("%d is negative\n", n);
