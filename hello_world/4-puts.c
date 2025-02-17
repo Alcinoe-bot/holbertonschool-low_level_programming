@@ -1,2 +1,2 @@
 #!/bin/bash
-puts("Programming is like building a multilingual puzzle %d\n")
+gcc -o 4-puts.c
