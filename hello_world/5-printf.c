@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* main - Point d'entrer
-* Description: affiche with proper grammar, but the outcome is a piece of art
-* Return : 0
+* main - Print
+* Descriptione: print retour a la ligne
+* Return:valeur 0
 */
 int main(void)
 {
