@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-int c = 123;
+int c = 122;
 while (c > 96)
 {
 putchar(c);
