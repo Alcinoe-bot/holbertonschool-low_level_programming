@@ -20,6 +20,7 @@ c++;
 else if (c == 57)
 {
 putchar('\n');
+c++;
 }
 }
 return (0);
