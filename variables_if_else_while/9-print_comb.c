@@ -9,17 +9,18 @@ int main(void)
 {
 int c = 48;
 while (c < 58)
-{
-if (c == 57)
-{
 putchar(c);
-c++;
-}
-putchar(c);
+{
+if (c < 57)
+{
 putchar(44);
 putchar(32);
 c++;
 }
+else
+{
 putchar('\n');
+}
+}
 return (0);
 }
