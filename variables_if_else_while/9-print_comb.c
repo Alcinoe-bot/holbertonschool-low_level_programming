@@ -17,7 +17,7 @@ putchar(44);
 putchar(32);
 c++;
 }
-else if (c == 57)
+else if (c == 58)
 {
 putchar('\n');
 c++;
