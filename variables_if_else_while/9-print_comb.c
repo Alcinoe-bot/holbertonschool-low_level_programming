@@ -9,15 +9,15 @@ int main(void)
 {
 int c = 48;
 while (c < 58)
-putchar(c);
-c++;
 {
-if (c < 57)
+putchar(c);
+c = c + 1;
+if (c < 58)
 {
 putchar(44);
 putchar(32);
 }
-else if (c == 57)
+else
 {
 putchar('\n');
 }
