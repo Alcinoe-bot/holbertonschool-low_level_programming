@@ -1,18 +1,18 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
-* main - numero de 0 a 9
-* Description: afficher les numero de 0 a 9
+* main - nombre de 0 a 9
+* Description: affiche tous les numeros de la table ASCII
 * Return:valeur 0
 */
 int main(void)
 {
-int i;
-i = 0;
-while (i < 10)
+int c = 48;
+while (c < 58)
 {
-printf("%d", i);
-i++;
+putchar(c);
+c++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
