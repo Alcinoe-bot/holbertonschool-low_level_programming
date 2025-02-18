@@ -10,17 +10,16 @@ int main(void)
 int c = 48;
 while (c < 58)
 putchar(c);
+c++;
 {
 if (c < 57)
 {
 putchar(44);
 putchar(32);
-c++;
 }
-else if (c == 58)
+else if (c == 57)
 {
 putchar('\n');
-c++;
 }
 }
 return (0);
