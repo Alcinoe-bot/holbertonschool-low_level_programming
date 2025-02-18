@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
 * main - lettre minuscule
 * Description: affiche les lettres minucules de la table ASCII
@@ -6,9 +7,11 @@
 */
 int main(void)
 {
-for (int c = 97; c < 123; c++)
+int c = 97;
+while (c < 123)
 {
 putchar(c);
+c++;
 }
 return (0);
 }
