@@ -1,4 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include <unistd.h>
 
-#endif
+/* fonction _putchar */
+
+char _putchar(char c);
