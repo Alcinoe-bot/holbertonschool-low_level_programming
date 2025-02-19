@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include "main.h"
+/**
+* print_last_digit - unite
+* @C: caractere
+* Description ():donne le dernier numero
+* Return :valeur 0
+*/
+int print_last_digit(int c)
+{
+return (c % 10);
+}
