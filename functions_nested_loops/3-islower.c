@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
 * _islower - minuscule ou majuscule
-* Description: ruturn 1 si c'est en minuscule sinon 0
+* @c: compare les caracteres
+* Description (): ruturn 1 si c'est en minuscule sinon 0
 * Return:valeur 0
 */
 int _islower(int c)
