@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+#include "main.h"
+/**
+* _abs - valeur absolue
+* @c: caractere
+* Description ():donne la valeur absolue
+* Return:valeur 0
+*/
+int _abs(int c)
+{
+c = pow(c, 2);
+c = sqrt(c);
+return (0);
+}
