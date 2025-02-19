@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
-* main - lettre minuscule
+* print_alphabet - lettre minuscule
 * Description: affiche les lettres minucules de la table ASCII
 * Return:valeur 0
 */
