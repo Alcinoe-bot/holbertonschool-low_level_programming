@@ -15,7 +15,12 @@ m++;
 c = 0;
 while (c < 10)
 {
-if (c *m < 10 && m != 0)
+if (c == 0)
+{
+_putchar('0');
+c++;
+}
+else if (c *m < 10)
 {
 _putchar(' ');
 _putchar('0' + c *m);
