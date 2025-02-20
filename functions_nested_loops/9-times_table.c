@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
 * times_table - table de multiplication
 * Description:affiche les tables de 0 a 9
@@ -16,24 +17,24 @@ while (c < 10)
 {
 if (c *m < 10)
 {
-putchar(' ');
-putchar('0' + c *m);
+_putchar(' ');
+_putchar('0' + c *m);
 c++;
 }
 else
 {
-putchar('0' + c *m / 10);
-putchar('0' + c *m % 10);
+_putchar('0' + c *m / 10);
+_putchar('0' + c *m % 10);
 c++;
 }
 if (c < 10)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 }
 else
 {
-putchar('\n');
+_putchar('\n');
 }
 }
 }
