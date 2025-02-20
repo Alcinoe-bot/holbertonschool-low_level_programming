@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "main.h"
+/**
+* jack_bauer - heure
+* Description (): affiche l'heure
+* Return:valeur 0
+*/
+void jack_bauer(void)
+{
+int i = 0;
+while (i < 9)
+{
+_putchar('i');
+i++;
+}
+}
