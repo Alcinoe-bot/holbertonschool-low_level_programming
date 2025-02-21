@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "6-abs.c"
 #include "main.h"
 /**
 * print_to_98 - jusqu'a 98
@@ -9,6 +10,7 @@
 void print_to_98(int n)
 {
 int m = -1;
+n = _abs(n);
 while (m < n)
 {
 m++;
@@ -31,5 +33,19 @@ _putchar('0' + m % 10);
 }
 }
 _putchar('\n');
-_putchar(n);
+if (n == m && n < 10)
+{
+_putchar('0' + n);
+}
+else if (n == m && n < 100)
+{
+_putchar('0' + m / 10);
+_putchar('0' + m % 10);
+}
+else if (n == m && n < 200)
+{
+_putchar('0' + m / 100);
+_putchar('0' + m / 10);
+_putchar('0' + m % 10);
+}
 }
