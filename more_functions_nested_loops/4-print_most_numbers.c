@@ -14,6 +14,10 @@ if (i != 2 && i != 4)
 _putchar('0' + i);
 i++;
 }
+else
+{
+i++;
+}
 }
 _putchar('\n');
 }
