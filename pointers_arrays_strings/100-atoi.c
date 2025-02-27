@@ -29,6 +29,13 @@ int _atoi(char *s)
 	}
 	while (c > 0)
 	{
+		if (num > 2147483647 - (s[i - 1] - '0')) / 10)
+	{
+		if (np % 2 == 0)
+			return(2147483647);
+		else
+			return(-2147483647);
+	}
 		num += ((s[i - 1] - '0') * d);
 		i--;
 		c--;
