@@ -34,7 +34,7 @@ int _atoi(char *s)
 		c--;
 		d *= 10;
 	}
-	if (np % 2 != 0 || c <= 2)
+	if (np % 2 != 0 || (c <= 2 && np > 0))
 	{
 		num *= -1;
 	}
