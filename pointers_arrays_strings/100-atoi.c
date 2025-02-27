@@ -20,8 +20,8 @@ int _atoi(char *s)
 			break;
 		if (s[i] == '-')
 			np++;
-		if (s[i] == '+')
-			np--;
+		else if (s[i] == '+')
+			continue;
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			c++;
@@ -34,7 +34,7 @@ int _atoi(char *s)
 		c--;
 		d *= 10;
 	}
-	if (np % 2 != 0 || (c <= 2 && np > 0))
+	if (np % 2 != 0)
 	{
 		num *= -1;
 	}
