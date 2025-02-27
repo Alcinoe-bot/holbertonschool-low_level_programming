@@ -38,7 +38,7 @@ int _atoi(char *s)
 	{
 		num *= 1;
 	}
-	else if (np % 2 != 0)
+	else
 	{
 		num *= -1;
 	}
