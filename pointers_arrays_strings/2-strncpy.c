@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strlen.c"
 /**
 * _strncpy - check the code for
 * @dest: pointeur
