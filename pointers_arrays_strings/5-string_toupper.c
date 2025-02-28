@@ -16,7 +16,7 @@ for (i = 0; s[i] != '0'; i++)
 	{
 		s[i] = s[i] - 32;
 	}
-		else if (s[i] >= 'Z' && s[i] <= 'Z')
+		else if (s[i] >= 'A' && s[i] <= 'Z')
 		{
 			s[i] = s[i];
 		}
