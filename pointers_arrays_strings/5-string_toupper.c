@@ -10,9 +10,9 @@
 char *string_toupper(char *s)
 {
 int i = 0;
-if (s == NULL)
+if (s == 0)
 	{
-	return (NULL);
+	return (0);
 	}
 while (s[i] != '0')
 {
