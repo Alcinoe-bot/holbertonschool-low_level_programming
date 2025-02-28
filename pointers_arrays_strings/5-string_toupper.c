@@ -16,6 +16,10 @@ for (i = 0; s[i] != '0'; i++)
 	{
 		s[i] = s[i] - 32;
 	}
+		else
+		{
+			s[i] = s[i];
+		}
 }
 return (s);
 }
