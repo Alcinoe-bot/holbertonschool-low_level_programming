@@ -1,36 +1,27 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
-* _strncat - check the code for
+* leet - check the code for
 * @s: pointeur
-* Description: remplace
+* Description: a
 * Return: 0.
 */
 char *leet(char *s)
 {
-int i;
-for (i = 0; s[i] != '\0'; i++)
-{ 
-if (s[i] != 'a' && s[i] != 'A' && s[i] != 'e' && s[i] != 'E' && s[i] != 't' && s[i] != 'T' && s[i] != 'l' && s[i] != 'L')
-{
-s[i] = s[i];
-i++;
-switch(s)
-{
-	case 'a' || 'A':
-	s[i] = 4;
-	i++;
-	case 'e' || 'E':
-	s[i] = 3;
-	i++;
-	case 't' || 'T':
-	s[i] = 7;
-	i++;
-	case 'l' || 'L':
-	s[i] = 1;
-	i++;
-	case 'o' || 
-}
-}
-return (s);
+	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
+	int i;
+	int j;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; alphaArr[j] != '\0'; j++)
+		{
+			if (s[i] == alphaArr[j])
+			{
+				s[i] = alphaArr[j + 1];
+				break;
+			}
+		}
+	}
+	return (s);
 }
