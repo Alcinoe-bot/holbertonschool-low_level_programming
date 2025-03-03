@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_array - check the code for
+* _memset - check the code for
 * @s: pointeur
 * @b: char
 * @n: nombre de nombre
