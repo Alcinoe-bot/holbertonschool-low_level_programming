@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * _strchr - check the code
- * @dest: pointeur
- * @src: pointeur
- * @n: nombre
+ * @s: pointeur
+ * @c: char
  * Return: return
  */
 char *_strchr(char *s, char c)
@@ -17,5 +16,9 @@ char *_strchr(char *s, char c)
 			return (s + i);
 		}
 	}
+if (s[i] == c)
+{
+return (s + i);
+}
 return (0);
 }
