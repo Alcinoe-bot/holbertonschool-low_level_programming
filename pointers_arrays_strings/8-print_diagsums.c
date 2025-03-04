@@ -1,9 +1,10 @@
 #include "main.h"
- /**
- * print_diagsums - diagonal
- * @a: pointeur
- * @size: taille
- */
+/**
+* print_diagsums - diagonal
+* @a: pointeur
+* @size: taille
+*/
+
 void print_diagsums(int *a, int size)
 {
 	int i;
