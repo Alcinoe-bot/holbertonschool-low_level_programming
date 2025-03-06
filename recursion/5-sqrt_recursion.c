@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * helper - recursion
+ * fonction - recursion
  * @i: nombre
  * @n: nombre
  * Return: int
  */
-int helper(int i, int n)
+int fonction(int i, int n)
 {
 int j;
 if (i * i != n)
@@ -14,7 +14,7 @@ if (i * i != n)
 	{
 		return (-1);
 	}
-	j = helper(i + 1, n);
+	j = fonction(i + 1, n);
 	return (j + 1);
 }
 return (0);
@@ -30,5 +30,5 @@ if (n < 0)
 {
 	return (-1);
 }
-return (helper(0, n));
+return (fonction(0, n));
 }
