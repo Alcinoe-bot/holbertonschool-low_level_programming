@@ -20,9 +20,9 @@ t = malloc(sizeof(char) * size);
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size; i++)
-		{
-			t[i] = c;
-		}
+for (i = 0; i < size; i++)
+{
+	t[i] = c;
+}
 return (t);
 }
