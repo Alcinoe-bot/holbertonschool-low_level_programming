@@ -12,13 +12,13 @@ int **t, i, j;
 if (width <= 0 || height <= 0)
 	return (NULL);
 
-t = (int **)malloc(sizeof(int *) * height);
+t = malloc(sizeof(int *) * height);
 if (t == NULL)
 	return (NULL);
 
 for (i = 0; i < height; i++)
 {
-	t[i] = (int *)malloc(sizeof(int) * width);
+	t[i] = malloc(sizeof(int) * width);
 	if (t[i] == NULL)
 	{
 		for (j = 0; j < i; j++)
