@@ -63,13 +63,13 @@ void print_all(const char * const format, ...)
 			 {"s", print_s}, {"f", print_f}, {NULL, NULL}};
 
 	va_start(args, format);
-	i = -1;
+	i = 0;
 	while (format != NULL && format[i])
 	{
 		j = 0;
 		while (ops[j].f != NULL)
 		{
-			if (format[i] == *(ops[j].c))
+			if (format[i] == *(ops[j].c) && i > 0)
 			{
 				printf("%s", separateur);
 				ops[j].f(args);
