@@ -73,6 +73,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separateur);
 				ops[j].f(args);
+				separateur = ", ";
 			}
 			j++;
 		}
