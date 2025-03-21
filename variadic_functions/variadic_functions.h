@@ -9,13 +9,12 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 /**
  * struct op - struct op
- * @c: char
- * @f: fonction pointeur
+ * @c: The operator
+ * @f: The function associated
  */
 typedef struct op
 {
-	char *c;
-	int (*f)(va_list a);
-}
-printer;
+    char c;  /* Changer de char * à char */
+    int (*f)(va_list a);
+} printer;
 #endif
