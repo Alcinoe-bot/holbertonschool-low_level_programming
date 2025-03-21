@@ -55,32 +55,34 @@ int print_s(va_list a)
 void print_all(const char * const format, ...)
 {
 	int i, j;
-	int elm1 = 1;
+	char *sep = "";
+	char *sep2 = ", ";
+	va_list anyArgs;
+	printer ops[] = {
+		{"c", print_c},
+		{"i", print_i},
+		{"s", print_s},
+		{"f", print_f},
+		{NULL, NULL}
+	};
 
-	va_list args;
-	printer ops[] = {{"c", print_c}, {"i", print_i}, {"s", print_s}, {"f", print_f}, {NULL, NULL}};
-
-	va_start(args, format);
+	va_start(anyArgs, format);
 	i = 0;
-
 	while (format != NULL && format[i])
 	{
 		j = 0;
-
 		while (ops[j].f != NULL)
 		{
 			if (format[i] == *(ops[j].c))
 			{
-				if (!elm1)
-					 printf(", ");
-
-				ops[j].f(args);
-				elm1 = 0;
+				printf("%s", sep);
+				ops[j].f(anyArgs);
 			}
 			j++;
 		}
+		sep = sep2;
 		i++;
 	}
 	printf("\n");
-	va_end(args);
+	va_end(anyArgs);
 }
