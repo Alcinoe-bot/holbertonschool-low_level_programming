@@ -16,5 +16,6 @@ typedef struct op
 {
 	char *c;
 	int (*f)(va_list a);
-} printer;
+}
+printer;
 #endif

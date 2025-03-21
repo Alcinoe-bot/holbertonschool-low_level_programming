@@ -2,7 +2,7 @@
 /**
  * print_c - prints char
  * @a: liste
- * Return: 0
+ * return : 0
  */
 int print_c(va_list a)
 {
@@ -12,7 +12,7 @@ int print_c(va_list a)
 /**
  * print_i - prints int
  * @a: liste
- * Return: 0
+ * return : 0
  */
 int print_i(va_list a)
 {
@@ -22,7 +22,7 @@ int print_i(va_list a)
 /**
  * print_f - prints float
  * @a: liste
- * Return: 0
+ * return : 0
  */
 int print_f(va_list a)
 {
@@ -32,7 +32,7 @@ int print_f(va_list a)
 /**
  * print_s - prints strings
  * @a: liste
- * Return: 0
+ * return : 0
  */
 int print_s(va_list a)
 {
@@ -69,7 +69,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (ops[j].f != NULL)
 		{
-			if (format[i] == *(ops[j].c) && i > 0)
+			if (format[i] == *(ops[j].c))
 			{
 				printf("%s", separateur);
 				ops[j].f(args);
