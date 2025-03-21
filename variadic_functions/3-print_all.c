@@ -2,6 +2,7 @@
 /**
  * print_c - print char
  * @a: liste
+ * Return: 0
  */
 int print_c(va_list a)
 {
@@ -12,6 +13,7 @@ int print_c(va_list a)
 /**
  * print_i - print int
  * @a: liste
+ * Return: 0
  */
 int print_i(va_list a)
 {
@@ -22,6 +24,7 @@ int print_i(va_list a)
 /**
  * print_f - print float
  * @a: liste
+ * Return: 0
  */
 int print_f(va_list a)
 {
@@ -32,6 +35,7 @@ int print_f(va_list a)
 /**
  * print_s - print strings
  * @a: liste
+ * Return: 0
  */
 int print_s(va_list a)
 {
@@ -59,26 +63,27 @@ void print_all(const char * const format, ...)
 	{'i', print_i},
 	{'f', print_f},
 	{'s', print_s},
-	{'\0', NULL}};
+	{'\0', NULL}
+			};
 
 	va_start(args, format);
 
-	while (format && format[i])
+while (format && format[i])
+{
+	j = 0;
+	while (ops[j].f)
 	{
-		j = 0;
-		while (ops[j].f)
-			{
-				if (format[i] == ops[j].c)
-					{
-						printf("%s", separateur);
-						ops[j].f(args);
-						separateur = ", ";
-						break;
-					}
-				j++;
-			}
-		i++;
+		if (format[i] == ops[j].c)
+		{
+			printf("%s", separateur);
+			ops[j].f(args);
+			separateur = ", ";
+			break;
+		}
+	j++;
 	}
+i++;
+}
 
 printf("\n");
 va_end(args);
