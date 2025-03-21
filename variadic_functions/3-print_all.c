@@ -1,9 +1,9 @@
 #include "variadic_functions.h"
 /**
- * print_c - prints char
- * @a: liste
- * return : 0
- */
+* print_c - prints char
+* @a: liste
+* return : 0
+*/
 int print_c(va_list a)
 {
 	printf("%c", va_arg(a, int));
@@ -54,32 +54,34 @@ int print_s(va_list a)
  */
 void print_all(const char * const format, ...)
 {
-	int i, j;
-	char *separateur = "";
-	char *separateur2 = ", ";
-
+	int i = 0
+	int  j;
+	char *separator = "";
 	va_list args;
-	printer ops[] = {{"c", print_c}, {"i", print_i},
-			 {"s", print_s}, {"f", print_f}, {NULL, NULL}};
+
+	printer ops[] = {{'c', print_c}, {'i', print_i},
+			{'f', print_f}, {'s', print_s}, {'\0', NULL}};
 
 	va_start(args, format);
-	i = 0;
-	while (format != NULL && format[i])
+
+	while (format && format[i])
 	{
 		j = 0;
-		while (ops[j].f != NULL)
+
+		while (ops[j].c)
 		{
-			if (format[i] == *(ops[j].c))
+			if (format[i] == ops[j].c)
 			{
-				printf("%s", separateur);
-				ops[j].f(args);
-				separateur = ", ";
+			printf("%s", separator);
+			ops[j].f(args);
+			separateur = ", ";
+			break;
 			}
-			j++;
+		j++;
 		}
-		separateur = separateur2;
-		i++;
+	i++;
 	}
-	printf("\n");
-	va_end(args);
+
+printf("\n");
+va_end(args);
 }
