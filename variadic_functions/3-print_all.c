@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 			 {"s", print_s}, {"f", print_f}, {NULL, NULL}};
 
 	va_start(args, format);
-	i = 0;
+	i = -1;
 	while (format != NULL && format[i])
 	{
 		j = 0;
