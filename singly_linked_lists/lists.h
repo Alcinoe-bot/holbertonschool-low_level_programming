@@ -9,8 +9,10 @@ size_t print_list(const list_t *h);
  * @str: chaine de caractere
  * @next: Pointeur vers le noeud suivant dans la liste chainee
  */
-typedef struct list_s {
+typedef struct list_s
+{
 	char *str;
+	unsigned int len;
 	struct list_s *next;
 } list_t;
 #endif
