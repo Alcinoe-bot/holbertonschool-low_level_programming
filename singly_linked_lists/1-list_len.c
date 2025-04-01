@@ -3,7 +3,7 @@
  * list_len - prints all the elements of a list_t list
  * list_t: liste of element
  * @h: pointeur
- * Return: 0
+ * Return: count
  */
 size_t list_len(const list_t *h)
 {
