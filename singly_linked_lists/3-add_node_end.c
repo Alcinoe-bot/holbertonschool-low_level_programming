@@ -20,7 +20,7 @@ if (num_c == NULL)
 
 num_c->str = strdup(str);
 num_c->len = i;
-num_c->next = *head;
+num_c->next = NULL;
 
 if (strdup(str) == NULL)
 {
